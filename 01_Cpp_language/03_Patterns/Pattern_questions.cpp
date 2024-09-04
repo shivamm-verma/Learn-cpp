@@ -331,4 +331,29 @@ int main()
     //   **
     //  ***
     // ****
+    // int num16, i = 1;
+    // cout << "Enter a num: ";
+    // cin >> num16;
+    // while (i <= num16)
+    // {
+    //     // space printing
+    //     int space = num16 -i;
+    //     while (space) {
+    //         cout << " ";
+    //         space--;
+    //     }
+
+    //     // Stars printing
+    //     int j=i;
+    //     while (j>=1){
+    //         cout << "*";
+    //         j--;
+    //     }
+    //     cout<< endl;
+    //     i += 1;
+    // }
+
+
+
+    
 }
