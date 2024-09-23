@@ -45,26 +45,30 @@ int main()
     //     i += 1;
     // }
 
+    // 1111
+    //  222
+    //   33
+    //    1
     int num3;
     cout << "Enter a num: ";
     cin >> num3;
     int i = 1;
     while (i <= num3)
     {
-        // print space
-        int space = i-1;
-        while (space)
+        // print spaces
+        int space = i - 1;
+        while (space != 0)
         {
             cout << " ";
-            space--;
+            space -= 1;
         }
-
-        // print nums
-        int j = 1;
-        while (j <= i)
+        // printing elems
+        int j = num3;
+        int count=j;
+        while (j >0)
         {
             cout << i;
-            j += 1;
+            j -= 1;
         }
         cout << endl;
         i += 1;
