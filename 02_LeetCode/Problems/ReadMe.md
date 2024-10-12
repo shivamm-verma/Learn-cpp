@@ -3,7 +3,7 @@
     <li>Subtract the Product and Sum of Digits of an Integer</li>
     <li>Hamming Weight counter</li>
     <li>Reverse Integer</li>
-    <li></li>
+    <li>Compliment of base 10 integer</li>
     <li></li>
     <li></li>
 </ol>

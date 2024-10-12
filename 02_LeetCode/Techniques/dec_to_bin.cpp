@@ -15,7 +15,7 @@ int main()
     cout << endl;
     bin(5);
     cout << endl;
-    bin(8);
+    bin(11);
     cout << endl;
     bin(75);
 }

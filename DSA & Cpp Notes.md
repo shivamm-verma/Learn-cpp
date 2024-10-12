@@ -11,20 +11,32 @@
     6(0110) -> (1001) + 0001 -> (1010)
     ```
 
+- `INT_MAX` & `INT_MIN`
+
 - 
 
 
 ## *Techniques&Codes*
-- How to `reverse` a num:
+- How to get `last bit` of a Bin number:
 ```cpp
-int dig = n %10;
-new_num = (new_num*10) + dig;   //reversed
+while (n!=0){
+    int bit = n & 1;
+    n /= 10; 
+    }
 ```
 
 - How to `reverse` a num:
 ```cpp
 int dig = n %10;
-new_num = (dig* pow(10,i) ) + new_num;
+new_num = (new_num*10) + dig;   //reversed
+n /= 10;
+```
+
+- How to `duplicate` a num:
+```cpp
+int dig = n %10;
+new_num = (dig* pow(10,i) ) + new_num;  //duplicated
+n /= 10;
 ```
 
 - Binary to Decimal:
