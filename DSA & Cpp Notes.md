@@ -14,14 +14,14 @@
 - `INT_MAX` & `INT_MIN`
 
 - ### _C++ STL Lib:_
-  - Pair 
+  - `Pair` :-
     ```cpp
     pair<int, string> myPair = {1, "AbcD"};
     pair<int, int> myPairArr[] = {{2, 4}, {5, 8}, {9, 13}};
     pair<int, pair<int, int>> conjPair = {3, {5, 7}};
     cout << conjPair.second.first << endl;  // should give 5
     ```
-   - Vector
+   - `Vector` :-
      - Dynamic Size, can be accessed like array.
         ```cpp
         vector<int> v;
@@ -77,7 +77,75 @@
         v.clear();
         v.empty(); //gives 1 or 0
         ```
+    - `List` in C++ :-
+      - List is similar to vector.
+      - All vectors iterators and functions are used here.
+      - "push_front" is cheaper(affordable) than "insert" in Vectors.
+        ```cpp
+        // List in C
+        list<int> lst;
+        lst.push_back(5);
+        lst.emplace_back(6);
+        lst.push_front(9);
+        // lst.pop_back();
+        for (auto itl : lst){cout << itl << " ";}
+        ```
+    - `Deque` (same as list and vectors)
+    - `Stack` :-
+      - LIFO (Last In, First Out)
+      - Operations: Push, Pop, Top/Peek (All in TC: O(1)-constant)
+      - size(), swap(), etc
+        ```cpp
+        st.push(4);
+        st.push(6);
+        st.pop(9);
+        cout << st.size() << endl;
+        cout << st.top() << endl;
+        ```
+    - `Queue` :-
+      - FIFO (First In, First Out)
+      - Operations: Push, Pop, Front, Back
+      - All functions like size swap same as stack.
+        ```cpp
+        queue<int> Q;
+        Q.push(3);
+        Q.push(4);
+        Q.push(6);
+        Q.push(9);
+        cout << Q.front() <<endl;
+        cout << Q.back() <<endl;
+        Q.pop();
+        cout << Q.front() <<endl;
+        cout << Q.back() <<endl;
+        ```
+    - `Priority_Queue` :-
+      - Same as Queue, but, the Largest is always on the Top, and shortest on the bottom.
+      - Operations: Push, Pop, Top (TC: push/pop- logN, top- O(1)-constant)
+      - based on Tree data structure.
+      - In Minimum heap, shortest on top, and largest on the bottom. 
+        ```cpp
+        // Max Heap
+        priority_queue<int> pq;
+        pq.push(12);
+        pq.push(34);
+        pq.push(8);
+        pq.emplace(55);
+        cout << pq.top() << endl;
+        pq.pop();
+        cout << pq.top() << endl;
 
+        // Minimum Heap
+        priority_queue<int, vector<int>, greater<int>> minPQ;
+        //same operations
+        ```
+    - `Set` :-
+      - Sorted & unique elements only.
+
+
+
+
+<!-- Begin New Notes here! Start writing... -->
+<!-- New Notes... -->
 
 ---
 
