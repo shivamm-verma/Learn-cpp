@@ -13,8 +13,31 @@
 
 - `INT_MAX` & `INT_MIN`
 
-- 
+- ### _C++ STL Lib:_
+  - Pair 
+    ```cpp
+    pair<int, string> myPair = {1, "AbcD"};
+    pair<int, int> myPairArr[] = {{2, 4}, {5, 8}, {9, 13}};
+    pair<int, pair<int, int>> conjPair = {3, {5, 7}};
+    cout << conjPair.second.first << endl;  // should give 5
+    ```
+   - Vector
+     - Dynamic Size, can be accessed like array.
+        ```cpp
+        vector<int> v;
+        vector<int> v2(v);
+        v2.emplace_back(65); //v2.push_back(65);
+        ```
+     - Vector Iterators- begin, end, rend, reverse  
+        ```cpp
+        vector<int>::iterator itr = v.begin();
+        cout << *(itr) << endl;
+        itr++;
+        cout << *(itr) << endl;
+        ```
 
+
+---
 
 ## *Techniques&Codes*
 - How to get `last bit` of a Bin number:
@@ -68,5 +91,6 @@ int dec_to_bin(int n) // 5 to 101
     return bin;
 }
 ```
+---
 
 ## *Leetcode Question Concepts*
