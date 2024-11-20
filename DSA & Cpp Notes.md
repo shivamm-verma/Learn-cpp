@@ -27,13 +27,55 @@
         vector<int> v;
         vector<int> v2(v);
         v2.emplace_back(65); //v2.push_back(65);
+        v2.push_back(19);
+        cout << v.back() << endl; // gives 19
         ```
-     - Vector Iterators- begin, end, rend, reverse  
+     - Vector iterators- begin() ,end() ,rend() ,rbegin() {actual first last elem itr}
         ```cpp
         vector<int>::iterator itr = v.begin();
         cout << *(itr) << endl;
         itr++;
         cout << *(itr) << endl;
+        ```
+     - Vector iterator- end()() (points to end address "After the Last element") 
+        ```cpp
+        vector<pair<int, int>> complx;
+        complx.emplace_back(2, 5);
+        vector<pair<int, int>>::iterator itr2 = complx.end(); // points to end address AFTER THE LAST ELEMENT
+        itr2 = itr2 - 1; // to get to Last Element
+        cout << itr2->first << "+" << itr2->second << "j" << endl;
+        ```
+     - Printing of vector using loops
+        ```cpp
+        for (auto itr3 = v.begin(); itr3 != v.end(); itr3++) {
+            cout << *(itr3) << " => ";
+        } cout << endl;
+        // Easy way
+        for (auto it : v){cout << it << " ";}
+        ```
+     - Erasing/deleting in vectors (vector.erase(start, end)) => [start, end)
+        ```cpp
+        // Erasing in Vectors
+        vector<int> vec = {3,4,5,6,7,8};
+        vec.erase(vec.begin()+2);   // removes 5
+        vec.erase(vec.begin()+1, vec.end()); // only first elem left
+        for (auto itt:vec){
+            cout << itt << " ";
+        }
+        ```
+     - Inserting in vectors 
+        ```cpp
+        // Inserting in Vectors
+        v.insert(v.begin() + 1, 55); // at 2nd
+        v.insert(v.end(),3, 91); // at last, 91 91 91
+        ```
+     - Other Commands
+        ```cpp
+        v.size();
+        v.pop_back();
+        v1.swap(v2);
+        v.clear();
+        v.empty(); //gives 1 or 0
         ```
 
 
