@@ -140,7 +140,22 @@
         ```
     - `Set` :-
       - Sorted & unique elements only.
-
+      - All iterators & functions(swap, size, erase, count) and printing using itr works, similar to vector.
+      - set.find() :-
+        - If found, stores address of the found elem.
+        - If Not, stores set.end()
+      - TC: logN
+        ```cpp
+        set<int> sett;
+        sett.emplace(3);
+        sett.insert(7);
+        sett.emplace(5); // {3,5,7}
+        for (auto itlk : sett){cout << itlk << " ";}
+        cout << endl;
+        auto itlk2 = sett.find(7); // find method
+        cout << *itlk2 << endl;
+        // Imps: find(), count(), erase()
+        ```
 
 
 

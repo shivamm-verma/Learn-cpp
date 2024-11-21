@@ -77,6 +77,10 @@ int main()
     // LIST in c++
     list<int> lst;
     lst.push_back(5);
+    lst.push_back(5);
+    lst.push_back(5);
+    lst.push_back(5);
+    lst.push_back(5);
     lst.emplace_back(6);
     lst.push_front(9);
     // lst.pop_back();
@@ -132,4 +136,21 @@ int main()
 
     // Set
     set<int> sett;
+    sett.emplace(3);
+    sett.insert(7);
+    sett.emplace(5); // {3,5,7}
+    for (auto itlk : sett)
+    {
+        cout << itlk << " ";
+    }
+    cout << endl;
+
+    auto itlk2 = sett.find(7);
+    cout << *itlk2 << endl;
+    auto itlk3 = sett.find(2); // returns smallest if not found, returns sett.end()
+    cout << *itlk3 << endl;
+    cout << sett.size();
+    // find(), count(), erase()
+    
+    
 }
