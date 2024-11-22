@@ -18,7 +18,7 @@
 ### Size of this Repository
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/shivamm-verma/learn-cpp)
-![GitHub Repo stars](https://img.shields.io/github/stars/shivamm-verma/learn-react)
+![GitHub Repo stars](https://img.shields.io/github/stars/shivamm-verma/learn-cpp)
 
 ### Commit Activity
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/shivamm-verma/learn-cpp)
