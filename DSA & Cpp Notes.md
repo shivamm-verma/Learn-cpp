@@ -156,6 +156,24 @@
         cout << *itlk2 << endl;
         // Imps: find(), count(), erase()
         ```
+    - `Upper_Bound` & `Lower_bound` in vector/List (C++)
+      - `lower_bound` : it gives iterator(address) of the same element or ***immediate*** next *first* higher element.
+        ```cpp
+        // list lst = {2,3,4,6,7};
+        int ind = lower_bound(a,a+n, 4) - a;  //itr of 4, a=2
+        int ind = lower_bound(a,a+n, 5) - a;  //itr of 6, a=2
+        int ind = lower_bound(a,a+n, 13) - a;  //itr= lst.end()(), a=2
+        ```
+      - `upper_bound` : it gives iterator(address) of the ***immediate*** next *first* higher element.
+        ```cpp
+        // list lst = {2,3,4,6,7};
+        int ind = upper_bound(a,a+n, 4) - a;  //itr of 6, a=2
+        int ind = upper_bound(a,a+n, 5) - a;  //itr of 6, a=2
+        int ind = upper_bound(a,a+n, 13) - a;  //itr= lst.end()(), a=2
+        ```
+
+
+
 
 
 
