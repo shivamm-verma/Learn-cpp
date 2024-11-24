@@ -120,7 +120,7 @@
         ```
     - `Priority_Queue` :-
       - Same as Queue, but, the Largest is always on the Top, and shortest on the bottom.
-      - Operations: Push, Pop, Top (TC: push/pop- logN, top- O(1)-constant)
+      - Operations: Push, Pop, Top (TC: push/pop- LogN, top- O(1)-constant)
       - based on Tree data structure.
       - In Minimum heap, shortest on top, and largest on the bottom. 
         ```cpp
@@ -144,7 +144,7 @@
       - set.find() :-
         - If found, stores address of the found elem.
         - If Not, stores set.end()
-      - TC: logN
+      - TC: LogN
         ```cpp
         set<int> sett;
         sett.emplace(3);
@@ -164,6 +164,13 @@
         int ind = lower_bound(a,a+n, 5) - a;  //itr of 6, a=2
         int ind = lower_bound(a,a+n, 13) - a;  //itr= lst.end()(), a=2
         ```
+        - To get just smaller element, but greatest of all elem before it,...
+          ```cpp
+          // list<int> lst= {1,2,4,4,4,4,9,11};
+          int ind = lower_bound(a, a+n, X) - a; //X = 4
+          ind--;  // (ind)>=0
+          ```
+        - TC: LogN
       - `upper_bound` : it gives iterator(address) of the ***immediate*** next *first* higher element.
         ```cpp
         // list lst = {2,3,4,6,7};
@@ -171,6 +178,18 @@
         int ind = upper_bound(a,a+n, 5) - a;  //itr of 6, a=2
         int ind = upper_bound(a,a+n, 13) - a;  //itr= lst.end()(), a=2
         ```
+        - This can give "Last occurence" of a number by doing...
+          ```cpp
+          // list<int> lst= {1,2,4,4,4,4,9,11};
+          int ind = upper_bound(a, a+n, X) - a; //X = 4
+          ind--;  // (ind)>=0
+          //given, ind is not at the first elem
+          ```
+        - It points to next greater element in the array.
+        - TC: LogN
+  
+  - < heading >
+    - < content >
 
 
 
