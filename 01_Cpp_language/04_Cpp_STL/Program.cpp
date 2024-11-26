@@ -149,9 +149,33 @@ int main()
     cout << *itlk2 << endl;
     auto itlk3 = sett.find(2); // returns smallest if not found, returns sett.end()
     cout << *itlk3 << endl;
-    cout << sett.size();
+    cout << sett.size() << endl;
     // find(), count(), erase()
-    
+
     // Check notes.md for lower_bound() and upper_bound()
+
+    // multiset
+    multiset<int> ms={2,3,3,4};
+
+    // iterators accessing in ms
+    auto inratr = ms.begin();
+    cout << *inratr << endl;
+    inratr++;
+    cout << *inratr << endl;
+    inratr++;
+    cout << *inratr << endl;
+    inratr++;
+    cout << *inratr << endl;
+    inratr++;
+    cout << (inratr == ms.end()) << endl; // true
+
+    // erasing in ms
+    // ms.erase(3); //erases all 3
+    ms.erase(ms.find(3));
+    for (auto iterat : ms)
+    {
+        cout << iterat << " ";
+    }
+
     
 }

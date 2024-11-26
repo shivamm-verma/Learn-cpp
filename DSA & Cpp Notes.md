@@ -90,6 +90,40 @@
         // lst.pop_back();
         for (auto itl : lst){cout << itl << " ";}
         ```
+
+    - `Upper_Bound` & `Lower_bound` in vector/List (C++)
+      - `lower_bound` : it gives iterator(address) of the same element or ***immediate*** next *first* higher element.
+        ```cpp
+        // list lst = {2,3,4,6,7};
+        int ind = lower_bound(a,a+n, 4) - a;  //itr of 4, a=2
+        int ind = lower_bound(a,a+n, 5) - a;  //itr of 6, a=2
+        int ind = lower_bound(a,a+n, 13) - a;  //itr= lst.end()(), a=2
+        ```
+        - To get just smaller element, but greatest of all elem before it,...
+          ```cpp
+          // list<int> lst= {1,2,4,4,4,4,9,11};
+          int ind = lower_bound(a, a+n, X) - a; //X = 4
+          ind--;  // (ind)>=0
+          ```
+        - TC: LogN
+      - `upper_bound` : it gives iterator(address) of the ***immediate*** next *first* higher element.
+        ```cpp
+        // list lst = {2,3,4,6,7};
+        int ind = upper_bound(a,a+n, 4) - a;  //itr of 6, a=2
+        int ind = upper_bound(a,a+n, 5) - a;  //itr of 6, a=2
+        int ind = upper_bound(a,a+n, 13) - a;  //itr= lst.end()(), a=2
+        ```
+        - This can give "Last occurence" of a number by doing...
+          ```cpp
+          // list<int> lst= {1,2,4,4,4,4,9,11};
+          int ind = upper_bound(a, a+n, X) - a; //X = 4
+          ind--;  // (ind)>=0
+          //given, ind is not at the first elem
+          ```
+        - It points to next greater element in the array.
+        - TC: LogN
+      - [*Visit this for practical code.*](01_Cpp_language/04_Cpp_STL/Upper-Lower_bound.cpp)
+
     - `Deque` (same as list and vectors)
     - `Stack` :-
       - LIFO (Last In, First Out)
@@ -156,40 +190,27 @@
         cout << *itlk2 << endl;
         // Imps: find(), count(), erase()
         ```
-    - `Upper_Bound` & `Lower_bound` in vector/List (C++)
-      - `lower_bound` : it gives iterator(address) of the same element or ***immediate*** next *first* higher element.
-        ```cpp
-        // list lst = {2,3,4,6,7};
-        int ind = lower_bound(a,a+n, 4) - a;  //itr of 4, a=2
-        int ind = lower_bound(a,a+n, 5) - a;  //itr of 6, a=2
-        int ind = lower_bound(a,a+n, 13) - a;  //itr= lst.end()(), a=2
-        ```
-        - To get just smaller element, but greatest of all elem before it,...
-          ```cpp
-          // list<int> lst= {1,2,4,4,4,4,9,11};
-          int ind = lower_bound(a, a+n, X) - a; //X = 4
-          ind--;  // (ind)>=0
-          ```
-        - TC: LogN
-      - `upper_bound` : it gives iterator(address) of the ***immediate*** next *first* higher element.
-        ```cpp
-        // list lst = {2,3,4,6,7};
-        int ind = upper_bound(a,a+n, 4) - a;  //itr of 6, a=2
-        int ind = upper_bound(a,a+n, 5) - a;  //itr of 6, a=2
-        int ind = upper_bound(a,a+n, 13) - a;  //itr= lst.end()(), a=2
-        ```
-        - This can give "Last occurence" of a number by doing...
-          ```cpp
-          // list<int> lst= {1,2,4,4,4,4,9,11};
-          int ind = upper_bound(a, a+n, X) - a; //X = 4
-          ind--;  // (ind)>=0
-          //given, ind is not at the first elem
-          ```
-        - It points to next greater element in the array.
-        - TC: LogN
   
-  - < heading >
-    - < content >
+  - `Multiset`
+    - same as set, but no uniqueness and repeated elems, yet sorted.
+    ```cpp
+    multiset<int> ms={2,3,3,4};
+    // ms.erase(3); // Deletes all 3
+    ms.erase(ms.find(3)); // Deletes First 3
+    for (auto iterat : ms)
+    {
+        cout << iterat << " ";
+    }
+    ```
+  
+  - `Unordered set`
+    - TC: bigO(1), worst case: O(n)
+    - all functions work, but not `lower_bound` & `upper_bound`
+    ```cpp
+    unordered_set<int> ust;
+    ``` 
+  - `Map`
+    - ...
 
 
 
