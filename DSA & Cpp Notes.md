@@ -14,6 +14,10 @@
 - `INT_MAX` & `INT_MIN`
 
 - ### _C++ STL Lib:_
+  - ```cpp
+    // import c++ STL library by-
+    #include <bits/stdc++.h
+    ```
   - `Pair` :-
     ```cpp
     pair<int, string> myPair = {1, "AbcD"};
