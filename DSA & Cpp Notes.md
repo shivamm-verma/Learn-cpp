@@ -16,7 +16,7 @@
 - ### _C++ STL Lib:_
   - ```cpp
     // import c++ STL library by-
-    #include <bits/stdc++.h
+    #include <bits/stdc++.h>
     ```
   - `Pair` :-
     ```cpp
