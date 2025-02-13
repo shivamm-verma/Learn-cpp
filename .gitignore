@@ -1,2 +1,5 @@
 # Exclude all .exe (executable) files
 *.exe
+
+# Exclude delete_folder, to avoid any revision codes
+delete_folder
