@@ -12,6 +12,12 @@
     ```
 
 - `INT_MAX` & `INT_MIN`
+  - To manage constraint [ -2<sup>31</sup> <= x <= 2<sup>31</sup> - 1 ], do...
+  ```cpp
+  if ((ans > INT_MAX/10) || (ans < INT_MIN/10)) {
+      return 0;
+  }
+  ```
 
 - ### _C++ STL Lib:_
   - ```cpp
