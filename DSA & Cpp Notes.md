@@ -1,6 +1,28 @@
 # *DSA & Cpp Notes - [Shivam Verma](https://github.com/shivamm-verma/Learn-cpp)*
 
+- To navigate this README sections:
+
+
+S.no | Headings | link🖇️
+-- | -- | -- 
+1 | Notes&Points | [Notes&Points](#notespoints)
+2 | Data Structures & Algorithm (DSA) | [Data Structures & Algorithm (DSA)](#data-structures--algorithm-dsa)
+3 | Techniques & Codes | [Techniques&Codes](#techniquescodes)
+
+
+
+---
+
 ## *Notes&Points*
+- To navigate this notes section:
+
+Topic & Links | 
+-- |
+[*Problems Solved*🧮 (other page)](03_problems/View.md) |
+[C++ STL Lib](#c-stl-lib) |
+
+
+
 - `1's compliment`: changing all '1's to 0 & all '0's to 1 in any Binary Number.
     ```
     6(0110) -> (1001)
@@ -229,6 +251,13 @@
 
 <!-- Begin New Notes here! Start writing... -->
 <!-- New Notes... -->
+
+---
+
+# *Data Structures & Algorithm (DSA)*
+
+S.no | Topic | Description
+-- | -- | --
 
 ---
 
