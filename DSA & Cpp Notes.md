@@ -1,4 +1,4 @@
-# *DSA & Cpp Notes - [Shivam Verma](https://github.com/shivamm-verma/Learn-cpp)*
+> # *DSA & Cpp Notes - [Shivam Verma](https://github.com/shivamm-verma/Learn-cpp)*
 
 - To navigate this README sections:
 
@@ -8,12 +8,13 @@ S.no | Headings | link🖇️
 1 | Notes&Points | [Notes&Points](#notespoints)
 2 | Data Structures & Algorithm (DSA) | [Data Structures & Algorithm (DSA)](#data-structures--algorithm-dsa)
 3 | Techniques & Codes | [Techniques&Codes](#techniquescodes)
+4 | Leetcode Question Concepts | [Leetcode Question&Concepts](#leetcode-question-concepts)
 
 
 
 ---
 
-## *Notes&Points*
+> ## *Notes&Points*
 - To navigate this notes section:
 
 Topic & Links | 
@@ -41,7 +42,7 @@ Topic & Links |
   }
   ```
 
-- ### _C++ STL Lib:_
+- > ### _C++ STL Lib:_
   - ```cpp
     // import c++ STL library by-
     #include <bits/stdc++.h>
@@ -254,14 +255,14 @@ Topic & Links |
 
 ---
 
-# *Data Structures & Algorithm (DSA)*
+> # *Data Structures & Algorithm (DSA)*
 
 S.no | Topic | Description
 -- | -- | --
 
 ---
 
-## *Techniques&Codes*
+> ## *Techniques&Codes*
 - How to get `last bit` of a Bin number:
 ```cpp
 while (n!=0){
@@ -315,4 +316,16 @@ int dec_to_bin(int n) // 5 to 101
 ```
 ---
 
-## *Leetcode Question Concepts*
+> ## *Leetcode Question Concepts*
+1. Minimum element in a vector
+  ```cpp
+  int vecSize = *min_element(vector.begin(),vector.end());
+  ```
+2. How to add Constraints in a leetcode problem
+```cpp
+if ( (n <= 50 || n >= 1) || (target <= 100000) || (*min_element(hours.begin(),hours.end()) >= 0) ) {
+  // your code
+} else {
+  return 0;
+}
+```
