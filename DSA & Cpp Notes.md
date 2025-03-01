@@ -16,11 +16,10 @@ S.no | Headings | link🖇️
 
 > ## *Notes&Points*
 - To navigate this notes section:
-
-Topic & Links | 
--- |
-[*Problems Solved*🧮 (other page)](03_problems/View.md) |
-[C++ STL Lib](#c-stl-lib) |
+    Topic & Links | 
+    -- |
+    [*Problems Solved*🧮 (other page)](03_problems/View.md) |
+    [C++ STL Lib](#c-stl-lib) |
 
 
 
@@ -319,7 +318,7 @@ int dec_to_bin(int n) // 5 to 101
 > ## *Leetcode Question Concepts*
 1. Minimum element in a vector
   ```cpp
-  int vecSize = *min_element(vector.begin(),vector.end());
+  int minOfVector = *min_element(vector.begin(),vector.end());
   ```
 2. How to add Constraints in a leetcode problem
 ```cpp
