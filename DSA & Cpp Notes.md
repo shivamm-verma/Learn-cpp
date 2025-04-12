@@ -257,6 +257,18 @@ S.no | Headings | link🖇️
 </details>
 
 
+- <details>
+  <summary><span style="font-size:20px; font-weight:600;"><i>Arrays </i></span></summary>
+
+  ```cpp
+  int arr[6];
+  int arr[1000000];  // max size in int main
+  int arr[10000000]; // max size Globally (outside main)
+  ```
+  Rest array notes: [Arrays/Array.md](Arrays/Array.md)
+  </details>
+
+
 
 
 
