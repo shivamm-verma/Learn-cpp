@@ -33,19 +33,23 @@ void printFromNto1(int i, int N)
 
 // BACKTRACKING
 // writing after the function call
-void BT1ToN(int i, int N) {
-    if (i <1) {
+void BT1ToN(int i, int N)
+{
+    if (i < 1)
+    {
         return;
     }
-    BT1ToN(i-1, N);
+    BT1ToN(i - 1, N);
     cout << i << endl;
 }
 
-void BtNto1(int i, int n){
-    if (i <1) {
+void BtNto1(int i, int n)
+{
+    if (i < 1)
+    {
         return;
     }
-    BT1ToN(i-1, n);
+    BtNto1(i + 1, n);
     cout << i << endl;
 }
 
@@ -56,5 +60,6 @@ int main()
     // printLinear1ToN(100);
     // printFromNto1(10, 10);
     // BT1ToN(4,4);
-    BT1ToN(4,4);
+    // BtNto1(4, 4);
+
 }
