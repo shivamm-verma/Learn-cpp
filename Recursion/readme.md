@@ -49,3 +49,24 @@
         return checkStringPalind(i + 1, s, n);
     }
     ```
+---
+### Fibonacci Series - Indexing
+![FSI](../z_Assets/FibonacciSeriesIndexing.png)
+Code
+```cpp
+int Fibonacci(int num, int i, int j)
+{
+    while (num > 0)
+    {
+        int temp = j + i;
+        i = j;
+        j = temp;
+        Fibonacci(num-1,i,j);
+        num--;
+        if (num == 0) {
+            return i;
+        }
+    }
+}
+// this works man!
+```
