@@ -1,5 +1,7 @@
+# Nothing required to ignore in DSA-in-python branch
+
 # Exclude all .exe (executable) files
-*.exe
+# *.exe
 
 # Exclude delete_folder, to avoid any revision codes
-delete_folder
+# delete_folder
