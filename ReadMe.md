@@ -1,19 +1,7 @@
-### My learnings of C++ Language Along with DSA (Data Structures and Algorithm)
+### 🔗 [To go back to C++ branch](https://github.com/shivamm-verma/Learn-cpp)
 
-
-## *[My DSA & Cpp Notes - markdown](<DSA & Cpp Notes.md>)*
-
-### Sources
-s.no | resource| link if any 
--- | -- | --
-1 | Love Babbar C++ DSA | ![Love Babbar C++ DSA](https://img.youtube.com/vi/WQoB2z67hvY/maxresdefault.jpg)
-2 | Gfg <33 | [geeksforgeeks.org/cpp/learn-dsa-in-cpp](https://www.geeksforgeeks.org/cpp/learn-dsa-in-cpp/) 
-3 | Mixed with Striver's | ![Striver DSA series](https://img.youtube.com/vi/FPu9Uld7W-E/maxresdefault.jpg)
-3 | etc. | 
-
-
-#
-
+### DSA in Python
+> When DSA/questions can be easily performed with python, why other languages are needed? [mentality]
 
 ### Link to my LeetCode⤵️⤵️
 <!-- [Shivam's Leetcode](https://leetcode.com/u/shivamm-verma/) -->
