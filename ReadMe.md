@@ -14,7 +14,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/shivamm-verma/learn-cpp) ![GitHub Repo stars](https://img.shields.io/github/stars/shivamm-verma/learn-cpp)
 
 ### Commit Activity
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/shivamm-verma/learn-cpp) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/shivamm-verma/learn-cpp) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/shivamm-verma/learn-cpp)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/shivamm-verma/learn-cpp/DSA-in-python) ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/shivamm-verma/Learn-cpp/DSA-in-python) 
 
 
 
